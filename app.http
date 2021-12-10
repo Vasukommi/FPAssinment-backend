@@ -1,7 +1,8 @@
-POST http://localhost:3000/login
+GET http://localhost:3000/login/
 Content-Type: application/json
 
 {
-    "user_id": "robert",
-    "password": "wilsonRobert45",
+    username: "robert",
+    password: "WilsonRobert45"
 }
+
