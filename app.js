@@ -44,7 +44,7 @@ app.post("/login/", async (request, response) => {
   } else {
     const payload = { username: username };
     const jwtToken = jwt.sign(payload, "magic");
-    response.send({ jwtToken });
+    response.send(JSON.stringify{ jwtToken });
     console.log(jwtToken);
     response.status(200);
   }
